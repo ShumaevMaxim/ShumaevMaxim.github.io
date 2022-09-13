@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="ru">
 
   <head>
     <title>Гиперссылки и форма</title>
   </head>
 
   <body>
-      
+      <map name = "figuri" >
+			<area shape = "rect" coords = "25,25,125,125" href = "info1.html" alt = "квадрат" >
+			<area shape = "circle" coords = "250,75,50" href = "info2.html" alt = "круг." >
+		</map>
       
       <ul>
       <li><a href="#spisok" title="Нумерованный список ссылок">Нумерованный список ссылок</a></li>
@@ -28,14 +31,10 @@
       <li><a href="https://example.com" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
       <!--noindex--><li><a href="https://example.com">Ссылка, запрещенная для индексации поисковиками</a></li><!--/noindex-->
       <li><p>АОАОАОАОАОАОАОА<a href="https://example.com">Ссылка контекстная в тексте абзаца</a>ОАОАОАОАОАОАОА</p></li>
-        <a href="https://example.com"><img src="https://ligatver.ru/upload/iblock/b0c/b0c4c950d3e81417f4cec4daf3e38461.jpg" alt=""></a>
-      <br><li>Ссылка-изображение</li>
-      <img src="b0c4c950d3e81417f4cec4daf3e38461.jpg" usemap="#figuri" alt="">
-        <map name = "figuri" >
-			<area shape = "rect" coords = "25,25,125,125" href = "info1.html" alt = "квадрат" >
-			<area shape = "circle" coords = "250,75,50" href = "info2.html" alt = "круг." >
-		</map>
-      <br><li>Ссылки из прямоугольных и круглых областей картинки</li>
+      <li><a href="https://example.com"><img src="https://ligatver.ru/upload/iblock/b0c/b0c4c950d3e81417f4cec4daf3e38461.jpg" alt=""></a>
+      <br>Ссылка-изображение</li>
+      <li><img src="b0c4c950d3e81417f4cec4daf3e38461.jpg" usemap="#figuri" alt="">
+      <br>Ссылки из прямоугольных и круглых областей картинки</li>
       <li><a href="info.html">Относительная на страницу в текущем каталоге</a></li>
       <li><a href="./about/info.html"> Относительная на страницу в каталоге about</a></li>
       <li><a href="./">Относительная на страницу в каталоге уровнем выше текущего</a></li>
